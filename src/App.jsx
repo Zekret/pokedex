@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div className="App">
-      Pokedex
+      <h1>Pokedex a</h1>
     </div>
   )
 }

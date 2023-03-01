@@ -17,9 +17,9 @@ export const SearchIcon = () => {
   );
 };
 
-export const FilterIcon = () => {
+export const FilterIcon = ({ handleFilter }) => {
   return (
-    <div className="flex items-center gap-[15px]">
+    <div onClick={handleFilter} className="flex items-center gap-[15px] cursor-pointer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

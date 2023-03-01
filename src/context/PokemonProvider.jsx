@@ -37,7 +37,9 @@ export const PokemonProvider = ({ children }) => {
         globalPokemons,
         getPokemonByID,
         onClickLoadMore,
-        loading
+        loading,
+        active,
+        setActive
       }}
     >
       {children}

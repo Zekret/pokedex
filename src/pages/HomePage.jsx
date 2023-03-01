@@ -9,7 +9,7 @@ export const HomePage = () => {
   const { active, setActive } = useContext(PokemonContext)
   return (
     <>
-      <div className="px-12 m-auto flex">
+      <div className="px-12 flex container">
         <FilterIcon handleFilter={() => setActive(!active)} />
       </div>
       <PokemonList />

@@ -18,7 +18,7 @@ export const Navigation = () => {
   };
   return (
     <>
-      <header className="flex items-center justify-between py-10 px-10">
+      <header className="flex items-center justify-between py-10 px-10 container">
         <Link to="/" className="flex flex-row items-center gap-4">
           <img className="w-16" src={pokedexIcon} />
           <span className="text-3xl font-semibold tracking-widest">

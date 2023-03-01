@@ -12,13 +12,13 @@ export const SearchPage = () => {
     pokemon.name.includes(location.state.toLowerCase())
   );
   return (
-    <>
+    <div className='container'>
       <p className="mb-8 text-2xl">
         Se encontraron <span className="font-bold">{filteredPokemons.length}</span> resultados:
       </p>
       <div className="grid grid-cols-4 gap-5 px-10 mt-8">
         {filteredPokemons.map(pokemon => <CardPokemon pokemon={pokemon} key={pokemon.id} />)}
       </div>
-    </>
+    </div>
   );
 };

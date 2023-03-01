@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { PokemonContext } from '../context/PokemonContext';
+import { CardPokemon } from './CardPokemon'
+
 
 export const PokemonList = () => {
+  const { allPokemons } = useContext(PokemonContext)
   return (
-    <div>PokemonList</div>
-  )
-}
+    <>
+      <div className="grid grid-cols-4 gap-5 px-10">
+        {allPokemons.map(pokemon => <CardPokemon pokemon={pokemon} key={pokemon.id} />)}
+      </div>
+    </>
+  );
+};

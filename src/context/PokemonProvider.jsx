@@ -1,15 +1,20 @@
 import { useState } from "react";
+import { useForm } from "../hooks/useForm";
 import { PokemonContext } from "./PokemonContext";
 
 const baseURL = "https://pokeapi.co/api/v2/";
 
 export const PokemonProvider = ({ children }) => {
   const [allPokemons, setAllPokemons] = useState([]);
-	const [globalPokemons, setGlobalPokemons] = useState([]);
-	const [offset, setOffset] = useState(0);
-  
+  const [globalPokemons, setGlobalPokemons] = useState([]);
+  const [offset, setOffset] = useState(0);
+
   const [loading, setLoading] = useState(true);
   const [active, setActive] = useState(false);
+
+  const { valueSearch, onInputChange, onResetForm } = useForm({
+    valueSearch: "",
+  });
 
   // lLamar 50 pokemones a la API
   const getAllPokemons = async (limit = 50) => {
@@ -62,7 +67,9 @@ export const PokemonProvider = ({ children }) => {
   return (
     <PokemonContext.Provider
       value={{
-        numero: 0,
+        valueSearch,
+        onInputChange,
+        onResetForm,
       }}
     >
       {children}

@@ -2,6 +2,7 @@ import React from "react";
 import { PokemonList } from "../components/PokemonList";
 import { FilterBar } from "../components/FilterBar"
 import { FilterIcon } from "../icons/Icons";
+import { ButtonMore } from "../components/ButtonMore";
 
 export const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ export const HomePage = () => {
       </div>
       <PokemonList />
       <FilterBar />
+      <ButtonMore />
     </>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import { PokemonList } from "../components/PokemonList";
+import { FilterBar } from "../components/FilterBar"
 import { FilterIcon } from "../icons/Icons";
 
 export const HomePage = () => {
@@ -9,6 +10,7 @@ export const HomePage = () => {
         <FilterIcon />
       </div>
       <PokemonList />
+      <FilterBar />
     </>
   );
 };

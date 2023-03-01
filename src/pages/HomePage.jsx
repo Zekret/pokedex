@@ -5,7 +5,7 @@ import { FilterIcon } from "../icons/Icons";
 export const HomePage = () => {
   return (
     <>
-      <div className="max-w-7xl m-auto flex">
+      <div className="px-12 m-auto flex">
         <FilterIcon />
       </div>
       <PokemonList />

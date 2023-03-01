@@ -14,8 +14,8 @@ export const PokemonProvider = ({ children }) => {
   const { globalPokemons } = getAllPokemons({ baseURL, setLoading })
  
   const { valueSearch, onInputChange, onResetForm } = useForm({
-    valueSearch: "",
-  });
+		valueSearch: '',
+	});
 
   const getPokemonByID = async (id) => {
     const res = await fetch(`${baseURL}pokemon/${id}`);

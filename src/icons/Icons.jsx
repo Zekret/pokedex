@@ -19,14 +19,14 @@ export const SearchIcon = () => {
 
 export const FilterIcon = () => {
   return (
-    <div className="flex items-center gap-4 mb-5 cursor-pointer w-8 h-8 stroke-slate-50">
+    <div className="flex items-center gap-[15px]">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="icon"
+        className="w-[30px] h-[30px] stroke-[#555]"
       >
         <path
           strokeLinecap="round"

@@ -13,7 +13,7 @@ export const CardPokemon = ({ pokemon }) => {
       </div>
       <div className="p-4">
         <span className="block text-[#888] mb-4">N° {pokemon.id}</span>
-        <h3 className="text-[#333] font-bold text-lg">{pokemon.name}</h3>
+        <h3 className="text-[#333] font-bold text-lg">{pokemon.name[0].toUpperCase() + pokemon.name.substring(1)}</h3>
         <div className="card-types">
           {pokemon.types.map(type => (
             <span

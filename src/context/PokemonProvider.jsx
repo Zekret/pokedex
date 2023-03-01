@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { getAllPokemons } from "../hooks/getAllPokemons";
 import { getPokemons } from "../hooks/getPokemons";
+import { useFiltered } from "../hooks/useFiltered";
 import { useForm } from "../hooks/useForm";
 import { PokemonContext } from "./PokemonContext";
 
@@ -12,6 +13,7 @@ export const PokemonProvider = ({ children }) => {
   const [active, setActive] = useState(false);
   const { allPokemons } = getPokemons({ baseURL, offset, setLoading });
   const { globalPokemons } = getAllPokemons({ baseURL, setLoading })
+  const { filteredPokemons, handleCheckbox } = useFiltered({ globalPokemons })
  
   const { valueSearch, onInputChange, onResetForm } = useForm({
 		valueSearch: '',
@@ -39,7 +41,9 @@ export const PokemonProvider = ({ children }) => {
         onClickLoadMore,
         loading,
         active,
-        setActive
+        setActive,
+        handleCheckbox,
+        filteredPokemons
       }}
     >
       {children}

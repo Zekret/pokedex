@@ -5,7 +5,7 @@ export const FilterBar = () => {
 
   const { active, handleCheckbox } = useContext(PokemonContext)
   return (
-    <div className={`container-filters ${active ? "active" : ""}`}>
+    <div className={`container-filters ${active ? "active" : ""}`} style={{ margin: '0 auto' }}>
       <div className="flex flex-col gap-5">
         <span className="font-bold text-2xl">Tipo</span>
         <div className="flex gap-5 ml-4">

@@ -28,17 +28,34 @@
 	--color-primary-hover: #83c5be;
 }
 
+/* Pokemons list */
+
+.pokemons {
+	margin: 0 auto;
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	gap: 1rem;
+	padding: 1rem 2rem;
+  
+	@media (max-width: 1000px) {
+	  grid-template-columns: repeat(3, 1fr);
+	}
+  
+	@media (max-width: 800px) {
+	  grid-template-columns: repeat(2, 1fr);
+	}
+  
+	@media (max-width: 400px) {
+	  grid-template-columns: repeat(1, 1fr);
+	}
+  }
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-/* Global */
-
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
 }
 
 /* active para mostrar los filtros */

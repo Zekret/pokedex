@@ -12,8 +12,8 @@ export const SearchPage = () => {
     pokemon.name.includes(location.state.toLowerCase())
   );
   return (
-    <div className='container'>
-      <p className="mb-8 text-2xl">
+    <div style={{ margin: '0 auto' }} className="max-w-[1200px] py-4 px-8">
+      <p className="mb-8 text-2xl px-10">
         Se encontraron <span className="font-bold">{filteredPokemons.length}</span> resultados:
       </p>
       <div className="grid grid-cols-4 gap-5 px-10 mt-8">

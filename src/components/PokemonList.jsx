@@ -10,7 +10,7 @@ export const PokemonList = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div className="grid grid-cols-4 gap-5 px-10 py-10 mt-8 container">
+        <div className="pokemons">
           {filteredPokemons.length ? (
             <>
               {filteredPokemons.map((pokemon) => (

@@ -26,7 +26,7 @@ export const Navigation = () => {
           </span>
         </Link>
         <form onSubmit={onSearchSubmit} className="flex items-center gap-4">
-          <div className="flex items-center gap-3 border-[1px] border-solid border-slate-300 px-5 py-4 rounded-3xl">
+          <div className="flex items-center gap-3 border-[1px] border-solid border-slate-300 px-5 py-4 rounded-xl">
             <SearchIcon />
             <input
               className="w-[300px] border-none outline-none text-base"
@@ -39,7 +39,7 @@ export const Navigation = () => {
             />
           </div>
 
-          <button className="border-none outline-none rounded-3xl py-4 px-8 cursor-pointer font-medium bg-cyan-800 text-white">
+          <button className="border-none outline-none rounded-xl py-4 px-8 cursor-pointer font-medium bg-blue-600 text-white">
             Buscar
           </button>
         </form>

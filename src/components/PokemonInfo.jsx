@@ -21,9 +21,9 @@ export const PokemonInfo = ({ pokemon }) => {
           alt={pokemon?.name}
         />
         <PokeTypes pokemon={pokemon} />
-        <Title content="About" backgroundSelected={backgroundSelected} />
+        <Title content="Información" backgroundSelected={backgroundSelected} />
         <Stats pokemon={pokemon} />
-        <Title content="Base Stats" backgroundSelected={backgroundSelected} />
+        <Title content="Puntos base" backgroundSelected={backgroundSelected} />
         <BaseStats pokemon={pokemon} backgroundSelected={backgroundSelected} />
       </div>
     </div>

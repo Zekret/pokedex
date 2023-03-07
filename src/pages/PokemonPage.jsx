@@ -5,7 +5,7 @@ import { fetchPokemonById } from "../hooks/fetchPokemonById";
 export const PokemonPage = () => {
   const { pokemon, loading } = fetchPokemonById();
   return (
-    <main className="flex flex-col contents container">
+    <main className="flex-col contents container">
       {loading ? <Loader /> : <PokemonInfo pokemon={pokemon} />}
     </main>
   );

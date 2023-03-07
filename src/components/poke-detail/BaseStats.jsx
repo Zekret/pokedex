@@ -15,11 +15,11 @@ export const BaseStats = ({ pokemon, backgroundSelected }) => {
       {pokemon?.stats?.map(({ base_stat, stat: { name } }) => {
         return (
           <div key={name} className='w-full flex'>
-            <span style={{ color: backgroundSelected }}>
+            <span className="font-bold text-sm uppercase text-right w-[20%] pr-4" style={{ borderRight: '1px solid #e0e0e0', margin: '0 1rem',color: backgroundSelected }}>
               {baseStatsNames[name]}
             </span>
             <div className='w-[60%] flex items-center gap-4'>
-              <p>0{base_stat}</p>
+              <p className="w-[10%]">0{base_stat}</p>
               <div className='w-full relative'>
                 <div
                   className='w-full h-[10px] opacity-50 rounded-lg'

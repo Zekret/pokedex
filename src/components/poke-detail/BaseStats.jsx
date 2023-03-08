@@ -11,7 +11,7 @@ export const BaseStats = ({ pokemon, backgroundSelected }) => {
   };
 
   return (
-    <div style={{ margin: '0.5rem 0' }} className='w-full flex flex-col'>
+    <div className='w-full flex flex-col m-2'>
       {pokemon?.stats?.map(({ base_stat, stat: { name } }) => {
         return (
           <div key={name} className='w-full flex'>

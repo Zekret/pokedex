@@ -14,8 +14,8 @@ export const PokemonInfo = ({ pokemon }) => {
       <Header pokemon={pokemon} />
       <div className="w-full px-8 flex flex-row justify-center gap-12">
         <div
-          className="flex justify-center w-[500px] h-[500px] relative flex-col rounded-xl"
-          style={{ border: "1px solid #e2e8f0" }}
+          className="flex justify-center w-[500px] h-[500px] relative flex-col rounded-xl border-[1px] border-solid"
+          style={{ borderColor: backgroundSelected }}
         >
           <div
             className="h-[300px] rounded-t-lg"
@@ -37,8 +37,8 @@ export const PokemonInfo = ({ pokemon }) => {
           </div>
         </div>
         <div
-          className="flex justify-center w-[500px] h-[500px] relative flex-col rounded-xl"
-          style={{ border: "1px solid #e2e8f0" }}
+          className="flex justify-center w-[500px] h-[500px] relative flex-col rounded-xl border-[1px] border-solid"
+          style={{ borderColor: backgroundSelected }}
         >
           <div className="flex flex-col justify-center">
             <Title

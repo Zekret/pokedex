@@ -10,7 +10,7 @@ export const Header = ({ pokemon }) => {
         <ArrowLeftIcon onClick={() => navigate(-1)} />
         <span className="font-bold capitalize text-[32px]">{pokemon?.name}</span>
       </div>
-      <p className="font-bold text-xl" >#{pokemon?.id}</p>
+      <p className="font-bold text-2xl" >#{pokemon?.id}</p>
     </header>
   );
 };

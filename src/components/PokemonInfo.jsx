@@ -5,10 +5,11 @@ import { Stats } from "../components/poke-detail/Stats";
 import { BaseStats } from "../components/poke-detail/BaseStats";
 import { background } from "../utils/BackgroundByType";
 import { PokeballIconBig } from "../icons/Icons";
+import { Skills } from "./poke-detail/Skills";
 
 export const PokemonInfo = ({ pokemon }) => {
+  console.log(pokemon)
   const backgroundSelected = background[pokemon?.types[0]?.type?.name];
-  console.log(pokemon);
   return (
     <div className="w-full flex justify-center flex-col items-center">
       <Header pokemon={pokemon} />
@@ -46,7 +47,11 @@ export const PokemonInfo = ({ pokemon }) => {
               backgroundSelected={backgroundSelected}
             />
             <Stats pokemon={pokemon} />
-            <Stats pokemon={pokemon} />
+            <Title
+              content="Habilidad"
+              backgroundSelected={backgroundSelected}
+            />
+            <Skills />
             <Title
               content="Puntos base"
               backgroundSelected={backgroundSelected}

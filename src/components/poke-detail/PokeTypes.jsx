@@ -1,4 +1,6 @@
 import { background } from "../../utils/BackgroundByType";
+import { translate } from "../../utils/TranslateByType";
+
 
 export const PokeTypes = ({ pokemon }) => {
   return (
@@ -9,7 +11,7 @@ export const PokeTypes = ({ pokemon }) => {
         style={{ background: background[name] }}
         className='py-1 px-10 rounded-xl text-white font-bold capitalize text-lg'
       >
-        {name}
+        {translate[name]}
       </div>
     ))}
   </div>

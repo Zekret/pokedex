@@ -1,0 +1,22 @@
+export const translate = {
+    normal: 'normal',
+    fighting: 'lucha',
+    flying: 'volador',
+    ground: 'tierra',
+    poison: 'veneno',
+    rock: 'roca',
+    bug: 'bicho',
+    ghost: 'fantasma',
+    steel: 'metal',
+    fire: 'fuego',
+    water: 'agua',
+    grass: 'planta',
+    electric: 'eléctrico',
+    psychic: 'psíquico',
+    ice: 'hielo',
+    dragon: 'dragon',
+    dark: 'siniestro',
+    fairy: 'hada',
+    unknown: 'desconocido',
+    shadow: 'sombra'
+}

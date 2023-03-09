@@ -6,15 +6,15 @@ import { ButtonMore } from "../components/ButtonMore";
 import { PokemonContext } from "../context/PokemonContext";
 
 export const HomePage = () => {
-  const { active, setActive } = useContext(PokemonContext)
+  const { active, setActive, allPokemons } = useContext(PokemonContext)
   return (
     <>
-      <div className="px-12 flex container">
+      <div className="px-12 flex container max-w-[1200px]" style={{ margin: '0 auto' }}>
         <FilterIcon handleFilter={() => setActive(!active)} />
       </div>
       <PokemonList />
       <FilterBar />
-      <ButtonMore />
+      <ButtonMore pokemons={allPokemons} />
     </>
   );
 };

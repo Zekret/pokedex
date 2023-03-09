@@ -1,4 +1,5 @@
 import { SkillsIcon } from "../../icons/Icons";
+import { translateAbilities } from "../../utils/TranslateByAbilities";
 
 export const Skills = ({ pokemon }) => {
   const { abilities } = pokemon;
@@ -8,7 +9,7 @@ export const Skills = ({ pokemon }) => {
         return (
           <div className="flex flex-col items-center gap-2">
             <SkillsIcon />
-            <span className="font-medium">{ability.ability.name}</span>
+            <span className="font-medium">{translateAbilities[ability.ability.name]}</span>
           </div>
         );
       })}

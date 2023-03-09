@@ -8,7 +8,6 @@ import { PokeballIconBig } from "../icons/Icons";
 import { Skills } from "./poke-detail/Skills";
 
 export const PokemonInfo = ({ pokemon }) => {
-  console.log(pokemon)
   const backgroundSelected = background[pokemon?.types[0]?.type?.name];
   return (
     <div className="w-full flex justify-center flex-col items-center">
@@ -51,7 +50,7 @@ export const PokemonInfo = ({ pokemon }) => {
               content="Habilidad"
               backgroundSelected={backgroundSelected}
             />
-            <Skills />
+            <Skills pokemon={pokemon} />
             <Title
               content="Puntos base"
               backgroundSelected={backgroundSelected}
